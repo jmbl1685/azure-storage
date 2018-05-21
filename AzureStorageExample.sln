@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorageExample.AzureUt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorageExample.UnitTest", "AzureStorageExample.UnitTest\AzureStorageExample.UnitTest.csproj", "{73B65B2C-5E6F-45EE-9C7F-2244330FEC57}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Temporal", "Temporal", "{D363939D-EEAD-4DA5-8B2B-33888FB2E08C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorageExample._Api", "AzureStorageExample._Api\AzureStorageExample._Api.csproj", "{00188830-25DF-4A3A-982B-3A4A50504364}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{73B65B2C-5E6F-45EE-9C7F-2244330FEC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73B65B2C-5E6F-45EE-9C7F-2244330FEC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73B65B2C-5E6F-45EE-9C7F-2244330FEC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00188830-25DF-4A3A-982B-3A4A50504364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00188830-25DF-4A3A-982B-3A4A50504364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00188830-25DF-4A3A-982B-3A4A50504364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00188830-25DF-4A3A-982B-3A4A50504364}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00188830-25DF-4A3A-982B-3A4A50504364} = {D363939D-EEAD-4DA5-8B2B-33888FB2E08C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86451F4B-29FB-40BD-A6B6-1F104A9E09B7}

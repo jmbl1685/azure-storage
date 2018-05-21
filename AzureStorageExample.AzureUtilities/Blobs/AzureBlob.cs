@@ -12,10 +12,11 @@ namespace AzureStorageExample.Blobs
 {
     public class AzureBlob
     {
-        /* Credentials to Azure Storage Emulator */
-        private const string StorageAccountName = "azurejbattydiag491";
-        private const string StorageAccountKey = "xxx#$%&¿?none";
-        private const string FolderPath = "C:\\AzureFiles";
+        /* Credentials to Azure Storage Emulator. 
+             TODO: It is advisable to use a Web.config */
+        private const string StorageAccountName = "xxx";
+        private const string StorageAccountKey = "xxx";
+        private const string FolderPath = "C:\\img";
 
         #region GetStorageAccount() 
         public CloudStorageAccount GetStorageAccount()
@@ -65,7 +66,8 @@ namespace AzureStorageExample.Blobs
             {
                 foreach (var filePath in Directory.GetFiles(FolderPath, "*.*"))
                 {
-                    var blob = GetBlobContainer("test-blob").GetBlockBlobReference(filePath);
+                    var fileName = filePath.Split('\\');
+                    var blob = GetBlobContainer("test-blob").GetBlockBlobReference(fileName[fileName.Length - 1].ToString());
                     blob.UploadFromFile(filePath);
                     blobUrl = blob.Uri.AbsoluteUri;
                 }
